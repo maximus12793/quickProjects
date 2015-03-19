@@ -41,6 +41,19 @@ height: 200px;
 margin: -100px 0 0 -100px;
 }
 
+.Team{
+color: #ffffff;
+font-family: 'Dosis', serif;
+text-align: center;
+font-size: 10px;
+}
+
+#About,#API,#theTeam{
+color: #ffffff;
+font-family: 'Dosis', serif;
+font-size: 28px;
+text-align: right;
+}
 
 
 /* remove canvas default margin */
