@@ -144,7 +144,9 @@ For more information on git, check out the online book,
 There are two C programming exercises for this lab -- one is to write
 a simple factorial program, and the other involves a program dealing
 with linked lists.  You'll find the instructions for each in their
-respective subfolders, `factorial` and `linkedlist`.
+respective subfolders, `factorial` and `linkedlist`.  If you're
+viewing this README on github, you can click these two links:
+[one](factorial/README.md) [two](linkedlist/README.md).
 
 ## Submit your solutions
 
