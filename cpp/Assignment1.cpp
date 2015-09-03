@@ -40,7 +40,7 @@ char getHighestFrequency(char line[]){
     		c = line[x];
     	}
     }
-    cout << char(tolower(c)) << max << "\n";
+    cout << char(tolower(c))<<" " << max << "\n";
 	return c;
 }
 
