@@ -9,7 +9,7 @@ SELF NOTE: account for ties with ascii values!!
 */
 
 #include <iostream>
-#include <string>
+#include <cstring>
 #include <fstream>
 
 using namespace std; /// so we don't need to prefix cout,cin,endl methods with std
@@ -66,7 +66,6 @@ int getFrequencyCount(const char line[], char matchChar){
 */
 int main(int argc, char* argv[]) {
     if ( argc > 1 ){
-        cout << "HERE2";
     	ifstream f(argv[1]);
     	string linez;
     	char cstr[256];
@@ -80,7 +79,6 @@ int main(int argc, char* argv[]) {
         f.close();
     }
     else{
-        cout << "part 2 son";
         int i = 0;
         while (!cin.eof()){
             char line[MAX_ARRAY_SIZE]; //terminate via \n
