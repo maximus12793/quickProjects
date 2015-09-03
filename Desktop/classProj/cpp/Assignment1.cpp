@@ -5,7 +5,7 @@ Eid: <your id>
 
 
 /*
-account for ties with ascii values
+SELF NOTE: account for ties with ascii values!!
 */
 
 #include <iostream>
@@ -64,17 +64,30 @@ int getFrequencyCount(const char line[], char matchChar){
    Use cout or printf to print the char and count.
    Remember that you must also create(and use) the method getHighestFrequency
 */
-int main() {
-	ifstream f("trumps.txt");
-	string linez;
-	char cstr[256];
+int main(int argc, char* argv[]) {
+    if ( argc > 1 ){
+        cout << "HERE2";
+    	ifstream f(argv[1]);
+    	string linez;
+    	char cstr[256];
 
-	for (int i = 0; getline(f, linez); ++i){
-		memset(cstr, 0, sizeof(cstr));
-		linez.copy(cstr, linez.length()+1);
-		getHighestFrequency(cstr);
-	}
-	cout<<"\n";
+    	for (int i = 0; getline(f, linez); ++i){
+    		memset(cstr, 0, sizeof(cstr));
+    		linez.copy(cstr, linez.length()+1);
+    		getHighestFrequency(cstr);
+    	}
+    	cout<<"\n";
+        f.close();
+    }
+    else{
+        cout << "part 2 son";
+        int i = 0;
+        while (!cin.eof()){
+            char line[MAX_ARRAY_SIZE]; //terminate via \n
+            cin.getline(line, MAX_ARRAY_SIZE, '\n');
+            getHighestFrequency(line);
+        }
+    }
     return 0;
 }
 
