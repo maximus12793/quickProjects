@@ -1,5 +1,5 @@
-CC=clang
-CFLAGS=-O3 -Wall
+CC=gcc
+CFLAGS=-O2 -Wall
 
 all: linkedlist
 
